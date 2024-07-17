@@ -9,8 +9,8 @@
     "slnt" 0;
 }
 *{
-    margin: 0;
+  margin: 0;
 }
-h1{
-    background-color: aquamarine;
+body{
+    font-family: Inter;
 }
