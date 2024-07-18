@@ -23,16 +23,14 @@ body{
 
 /* navigation */
 .nav-container-section{
-  border: 2px solid red;
-  width: 99%;
+  width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.932);
 }
 .navigation-container{
-  border: 3px solid goldenrod;
   width: 70%; 
   margin: 0 auto;
-  margin-top: 3.4rem;
+  padding-top: 3.4rem;
   display: flex;
   justify-content: space-between;
   text-align: center;
@@ -45,18 +43,11 @@ body{
   font-style: italic;
 }
 .navigation-content{
-  border: 2px solid rgb(56, 56, 56);
+  border: 1px solid rgb(70, 69, 69);
   border-radius: 30px;
   padding: 5px 0px;
   padding-left: 0px;
 }
-/* .navigation-content{
-  align-items: center;
-  border: 1px solid rgb(218, 7, 7);
-  text-decoration: none;
-  border-radius: 60px;
-  margin-top: 10px;
-} */
 .navigation-content a{
   align-items: center;
   text-decoration: none;
@@ -70,7 +61,6 @@ body{
   border-radius: 15px;
 }
 .banner-container{
-  border: 2px solid blue;
   width: 70%;
   height: 100%;
   margin: 0 auto;
@@ -78,7 +68,6 @@ body{
   justify-content: space-between;
 }
 .banner-content-item{
-  border: 2px solid rgb(238, 218, 5);
   width: 40%;
   justify-content: center;
   align-items: center;
@@ -112,7 +101,6 @@ body{
   font-size: 5.5rem; 
 }
 .banner-img{
-  border :2px solid rgb(233, 231, 230);
   width:30%;
   display: flex;
   flex-direction: column;
@@ -121,9 +109,6 @@ body{
 .banner-img img{
   height: 100%;
 }
-/* .provide-container{
-  position: relative;
-} */
 .provide-primary-item{
   color: white;
   backdrop-filter: blur(10px);
@@ -162,6 +147,81 @@ body{
 .icon-hum{
   display: none;
 }
+/* change habit section start */
+.habits-container{
+  background-color: black;
+  color: white;
+}
+.habits-content{
+  border: 1px solid red;
+  width: 70%;
+  margin: 0 auto;
+}
+.habits-content-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+.habits-content-item .content{
+  border: 1px solid green;
+  
+}
+.content img{
+  border-radius: 50%;
+  margin-left: 22%;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.content h3{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.content p{
+  text-align: center;
+  font-size: 0.9rem;
+}
+.habits-title h2{
+  font-size: 3rem;
+  font-width: 900;
+  text-align: center;
+  margin-top: 100px;
+}
+.habits-title p{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.run-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 100px;
+  background-color: rgb(58, 57, 57);
+  border-radius: 16px;
+  margin: 100px 3px 3px 3px;
+  padding: 20px 30px 20px ;
+}
+.run-banner h1{
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+.run-banner button{
+  background-color: rgb(230, 83, 60);
+  padding: 20px 70px;
+  border-radius: 20px;
+  border: none;
+  margin-top: 20px;
+  color: white;
+  font-size: 1rem;
+}
+.run-banner-img img{
+  width: 55%;
+  height: 100%;
+  margin-left: 45%;
+  border-radius: 16px;
+}
+/* change habit section end */
 /* mobile responsive */
 @media screen and (max-width:576px) {
  
@@ -223,5 +283,24 @@ body{
   .provide-second-item h2{
     font-size: 2rem;
     font-weight: 700;
+  }
+  /* change habit section start */
+  .habits-content-item {
+    flex-direction: column;
+  }
+  .run-container {
+    flex-direction: column;
+  }
+  .run-banner-img img{
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 20px ;
+  }
+  .run-banner h1{
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .run-banner button{
+    padding: 10px 75px;
   }
 }
