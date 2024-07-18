@@ -12,5 +12,218 @@
   margin: 0;
 }
 body{
-    font-family: Inter;
+  font-family: Inter;
+}
+
+/* defalt style */
+.dark{
+  color: rgba(255, 255, 255, 0.5);;
+  font-size: 1rem;
+}
+
+/* navigation */
+.nav-container-section{
+  border: 2px solid red;
+  width: 99%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.932);
+}
+.navigation-container{
+  border: 3px solid goldenrod;
+  width: 70%; 
+  margin: 0 auto;
+  margin-top: 3.4rem;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  height: 100%;
+}
+.navigation-container h2{
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: rgb(230, 83, 60);
+  font-style: italic;
+}
+.navigation-content{
+  border: 2px solid rgb(56, 56, 56);
+  border-radius: 30px;
+  padding: 5px 0px;
+  padding-left: 0px;
+}
+/* .navigation-content{
+  align-items: center;
+  border: 1px solid rgb(218, 7, 7);
+  text-decoration: none;
+  border-radius: 60px;
+  margin-top: 10px;
+} */
+.navigation-content a{
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  margin: 0px 70px; 
+  margin-left: 2px;
+}
+.navigation-content span{
+  background-color: rgb(230, 83, 60);
+  padding: 2px 15px ;
+  border-radius: 15px;
+}
+.banner-container{
+  border: 2px solid blue;
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.banner-content-item{
+  border: 2px solid rgb(238, 218, 5);
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+}
+.banner-content-item h2{
+  font-size: 4.8rem;
+  padding-top: 6.5rem;
+  color: white; 
+}
+.banner-content-item p{
+  font-size: 1rem;
+  padding-top: 3rem;
+}
+.banner-content-item button{
+  font-size: 1rem;
+  padding: 1rem 3.5rem ;
+  color: white; 
+  background-color: rgb(230, 83, 60);
+  border-radius: 2rem;
+  border: none;
+  margin-right: 1.4rem;
+  margin-top: 2.5rem;
+  margin-bottom: 4rem;
+}
+.banner-content-item .btn-primary{
+  color: white;
+  background-color: black;
+  padding: 1.1rem 3.8rem ;
+}
+.banner-content-item span{
+  font-size: 5.5rem; 
+}
+.banner-img{
+  border :2px solid rgb(233, 231, 230);
+  width:30%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 5rem; 
+}
+.banner-img img{
+  height: 100%;
+}
+/* .provide-container{
+  position: relative;
+} */
+.provide-primary-item{
+  color: white;
+  backdrop-filter: blur(10px);
+  border: 1px solid white;
+  border-radius: 20px;
+  text-align: left;
+  width: 160px;
+  position: absolute;
+  top: 65%;
+  left: 55%;
+  padding: 15px 10px;
+}
+.provide-second-item{
+  color: rgb(255, 255, 255);
+  background-color: rgb(104, 94, 94);
+  backdrop-filter: blur(10px);
+  border: 1px solid white;
+  border-radius: 20px;
+  text-align:left;
+  width: 160px;
+  position: absolute;
+  top:28%;
+  left: 73%;
+  padding: 5px 10px;
+}
+.provide-second-item h2{
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.provide-primary-item p{
+  font-size: 1rem;
+}
+.provide-second-item p{
+  font-size: 1rem
+}
+.icon-hum{
+  display: none;
+}
+/* mobile responsive */
+@media screen and (max-width:576px) {
+ 
+  .navigation-content{
+    display: none;
+  }
+  .icon-hum{
+    display: block;
+    margin-top: 6px;
+    margin-right: 5px;
+  }
+  .navigation-container{
+   width:100%; 
+  }
+  .nav-container-section{
+    width: 100%;
+  }
+  .banner-container{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+  .banner-content-item{
+    width: 100%;    
+  }
+  .banner-img{
+   width:100%;
+  }
+  .banner-content-item h2{
+    font-size: 3rem;
+    padding-top: 5rem;; 
+  }
+  .banner-content-item span{
+    font-size: 3.8rem; 
+  }
+  .banner-content-item{
+    font-size: 0.8rem;
+  }
+  .banner-content-item button{
+    font-size: 1rem;
+    padding: 1rem 2rem ;
+  }
+  .banner-content-item .btn-primary{
+    color: white;
+    padding: 1.1rem 2.5rem ;
+  }
+  .provide-primary-item{
+    width: 150px;;
+    top: 114%;
+    left: 10%;
+    padding: 14px 15px;
+  }
+  .provide-second-item{
+    width: 160px;
+    top: 80%;
+    left: 53%;
+    padding: 10px 10px;
+  }
+  .provide-second-item h2{
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+
 }
