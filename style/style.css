@@ -174,21 +174,21 @@ body{
     margin-right: 5px;
   }
   .navigation-container{
-   width:100%; 
+   width:99%; 
   }
   .nav-container-section{
-    width: 100%;
+    width: 99%;
   }
   .banner-container{
-    width: 100%;
+    width: 99%;
     height: 100%;
     flex-direction: column;
   }
   .banner-content-item{
-    width: 100%;    
+    width: 99%;    
   }
   .banner-img{
-   width:100%;
+   width:99%;
   }
   .banner-content-item h2{
     font-size: 3rem;
@@ -202,7 +202,7 @@ body{
   }
   .banner-content-item button{
     font-size: 1rem;
-    padding: 1rem 2rem ;
+    padding: 1rem 1.5rem ;
   }
   .banner-content-item .btn-primary{
     color: white;
@@ -210,13 +210,13 @@ body{
   }
   .provide-primary-item{
     width: 150px;;
-    top: 114%;
-    left: 10%;
+    top: 125%;
+    left: 9%;
     padding: 14px 15px;
   }
   .provide-second-item{
     width: 160px;
-    top: 80%;
+    top: 100%;
     left: 53%;
     padding: 10px 10px;
   }
@@ -224,6 +224,4 @@ body{
     font-size: 2rem;
     font-weight: 700;
   }
-
-
 }
