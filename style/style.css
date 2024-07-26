@@ -35,6 +35,7 @@ body{
   justify-content: space-between;
   text-align: center;
   height: 100%;
+
 }
 .navigation-container h2{
   font-size: 2.2rem;
@@ -79,6 +80,7 @@ body{
 }
 .banner-content-item p{
   font-size: 1rem;
+  font-weight: 300;
   padding-top: 3rem;
 }
 .banner-content-item button{
@@ -94,6 +96,7 @@ body{
 }
 .banner-content-item .btn-primary{
   color: white;
+  border: 1px solid white;
   background-color: black;
   padding: 1.1rem 3.8rem ;
 }
@@ -109,17 +112,18 @@ body{
 .banner-img img{
   height: 100%;
 }
+
 .provide-primary-item{
   color: white;
   backdrop-filter: blur(10px);
   border: 1px solid white;
   border-radius: 20px;
   text-align: left;
-  width: 160px;
+  width: 170px;
   position: absolute;
   top: 65%;
   left: 55%;
-  padding: 15px 10px;
+  padding: 15px 15px;
 }
 .provide-second-item{
   color: rgb(255, 255, 255);
@@ -132,22 +136,37 @@ body{
   position: absolute;
   top:28%;
   left: 73%;
-  padding: 5px 10px;
+  padding: 5px 15px;
 }
 .provide-second-item h2{
   font-size: 2.5rem;
   font-weight: 900;
 }
+.ball{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: red;
+  margin-right: 8px;
+}
+.ball-content{
+  display: flex;
+}
 .provide-primary-item p{
   font-size: 1rem;
+  font-weight: 300;
 }
 .provide-second-item p{
-  font-size: 1rem
+  font-size: 1rem;
+  font-weight: 300;
 }
 .icon-hum{
   display: none;
 }
+
+
 /* change habit section start */
+
 .habits-container{
   background-color: black;
   color: white;
@@ -164,7 +183,6 @@ body{
 }
 .habits-content-item .content{
   border: 1px solid green;
-  
 }
 .content img{
   border-radius: 50%;
@@ -179,10 +197,11 @@ body{
 .content p{
   text-align: center;
   font-size: 0.9rem;
+  font-weight: 300;
 }
 .habits-title h2{
   font-size: 3rem;
-  font-width: 900;
+  font-weight: 900;
   text-align: center;
   margin-top: 100px;
 }
@@ -190,6 +209,7 @@ body{
   text-align: center;
   margin-top: 30px;
   margin-bottom: 50px;
+  font-weight: 300;
 }
 .run-container{
   display: flex;
@@ -222,22 +242,96 @@ body{
   border-radius: 16px;
 }
 /* change habit section end */
+
+/* program container start */
+.program-container{
+  border: 1px solid rgb(3, 168, 119);
+  background-color: black;
+  color: white;
+}
+.program-title{
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.program-title h1{
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+.program-title p{
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+.program-content{
+  border: 0.6px solid rgb(237, 240, 237);
+  display: flex;
+  border-radius: 15px;
+}
+.program-section1{
+  width: 70%;
+  margin: 0 auto;
+  height: auto;
+}
+.program-items{
+  border: 1px solid rgb(5, 233, 92);
+}
+.program-items img{
+  width: 18%;
+  height: 20%;
+}
+.program-items h3{
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding-top: 22px;
+  padding-bottom: 20px;
+}
+.program-items p{
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin-bottom: 10px;
+  line-height: 21px;
+  letter-spacing: 0.6px
+}
+.program-card{
+  border: 2px solid slateblue;
+  display: grid;
+  grid-template-columns: repeat(2 ,1fr);
+}
+.gym-video video{
+  border: 2px solid brown;
+  width: 100%;
+  height: 100%;
+}
+.run-btn{
+  margin-top: 25px;
+  margin-bottom: 44px;
+}
+/* program container end*/
+
 /* mobile responsive */
 @media screen and (max-width:576px) {
- 
+  html, body {
+    overflow-x: hidden;
+  }
   .navigation-content{
     display: none;
   }
   .icon-hum{
     display: block;
     margin-top: 6px;
-    margin-right: 5px;
+    margin-right: 20px;
+  }
+  .navigation-container h2{
+    margin-left: 20px;
   }
   .navigation-container{
-   width:99%; 
+   width:100%;
   }
   .nav-container-section{
-    width: 99%;
+    width: 100%;
+    
   }
   .banner-container{
     width: 99%;
@@ -245,14 +339,22 @@ body{
     flex-direction: column;
   }
   .banner-content-item{
-    width: 99%;    
+    width: 99%; 
+    margin-left: 20px;
+      
   }
   .banner-img{
    width:99%;
+   margin-left: 20px;
+   margin-right: 20px;
   }
   .banner-content-item h2{
     font-size: 3rem;
     padding-top: 5rem;; 
+    margin-right: 20px; 
+  }
+  .banner-content-item p{
+    margin-right: 20px; ;
   }
   .banner-content-item span{
     font-size: 3.8rem; 
@@ -263,30 +365,44 @@ body{
   .banner-content-item button{
     font-size: 1rem;
     padding: 1rem 1.5rem ;
+    margin-left: 3px;
   }
   .banner-content-item .btn-primary{
     color: white;
     padding: 1.1rem 2.5rem ;
+    margin-right: 16px;
   }
   .provide-primary-item{
     width: 150px;;
-    top: 125%;
+    top: 114%;
     left: 9%;
     padding: 14px 15px;
   }
   .provide-second-item{
     width: 160px;
-    top: 100%;
-    left: 53%;
+    top: 70%;
+    left: 50%;
     padding: 10px 10px;
+    margin-right: 20px;
   }
   .provide-second-item h2{
     font-size: 2rem;
     font-weight: 700;
   }
+  .banner-img img{
+    height: 100%;
+    width: 90%;
+  }
   /* change habit section start */
+  .habits-content{
+    width: 85%;
+  }
   .habits-content-item {
     flex-direction: column;
+  }
+  .habits-title h2{
+    margin-top: 5px;
+    font-size: 2rem;
   }
   .run-container {
     flex-direction: column;
@@ -303,4 +419,14 @@ body{
   .run-banner button{
     padding: 10px 75px;
   }
+  /* change habit section End */
+
+  /* program- container start */
+  .program-content {
+    flex-direction: column;
+  }
+  .program-card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* program- container end */
 }
