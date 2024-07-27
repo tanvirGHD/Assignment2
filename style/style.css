@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
+@import url('https://fonts.cdnfonts.com/css/miama');
 .inter-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -24,13 +24,13 @@ html, body {
   font-size: 1rem;
   font-weight: 300;
 }
-
 /* navigation */
 .nav-container-section{
   width: 100%;
   height: 100%;
   /* background-color: rgba(0, 0, 0, 0.932); */
   background: linear-gradient(180.00deg, rgb(0, 0, 0),rgb(39, 39, 39),rgb(0, 0, 0) 100%);
+  position: relative;
 }
 .navigation-container{
   width: 70%; 
@@ -66,6 +66,12 @@ html, body {
   padding: 2px 15px ;
   border-radius: 15px;
 }
+/* banner style */
+.banner-content-item .font-shape {
+  font-family: Miama;
+  font-weight: 500;
+  font-size: 10rem;
+}
 .banner-container{
   width: 70%;
   height: 100%;
@@ -80,12 +86,17 @@ html, body {
 }
 .banner-content-item h2{
   font-size: 4.8rem;
-  padding-top: 6.5rem;
+  padding-top: 4.5rem;
   color: white; 
+  line-height: 120%;
 }
 .banner-content-item p{
   font-size: 1rem;
-  padding-top: 3rem;
+  padding-top: 2.8rem;
+  line-height: 24px;
+  letter-spacing: 0.6px;
+  font-weight: 250;
+  padding-right: 30px;
 }
 .banner-content-item button{
   font-size: 1rem;
@@ -104,9 +115,7 @@ html, body {
   background-color: black;
   padding: 1.1rem 3.8rem ;
 }
-.banner-content-item span{
-  font-size: 5.5rem; 
-}
+
 .banner-img{
   width:30%;
   display: flex;
@@ -116,7 +125,6 @@ html, body {
 .banner-img img{
   height: 100%;
 }
-
 .provide-primary-item{
   color: white;
   backdrop-filter: blur(10px);
@@ -128,6 +136,9 @@ html, body {
   top: 65%;
   left: 55%;
   padding: 15px 15px;
+}
+.youtube-icon{
+  display: none;
 }
 .provide-second-item{
   color: rgb(255, 255, 255);
@@ -161,7 +172,6 @@ html, body {
   display: none;
 }
 /* change habit section start */
-
 .habits-container{
   background-color: black;
   color: white;
@@ -175,9 +185,6 @@ html, body {
   justify-content: center;
   align-items: center;  
 }
-/* .habits-content-item .content{
-  border: 1px solid green;
-} */
 .content img{
   border-radius: 50%;
   margin-left: 22%;
@@ -202,6 +209,7 @@ html, body {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 50px;
+  letter-spacing: 0.8px;
 }
 .run-container{
   display: flex;
@@ -212,7 +220,6 @@ html, body {
   border-radius: 16px;
   margin: 100px 3px 0px 3px;
   padding: 20px 30px 20px ;
-
 }
 .run-banner h1{
   font-size: 3rem;
@@ -254,7 +261,10 @@ html, body {
   margin-bottom: 30px;
 }
 .program-title p{
+  font-size: 0.9rem;
   margin-bottom: 40px;
+  line-height: 24px;
+  letter-spacing: 0.8px;
 }
 .program-content{
   display: flex;
@@ -270,7 +280,6 @@ html, body {
   margin-top: 3px;
   margin-left: 3px;
 }
-
 .program-items img{
   width: 18%;
   height: 20%;
@@ -299,8 +308,9 @@ html, body {
   border: 1px solid rgb(53, 51, 51);
   border-radius: 10px;
   width: 100%;
-  height: 100%;
+  height: 90%;
   margin-left: 5px;
+  margin-top: 20px;
 }
 .run-btn{
   margin-top: 25px;
@@ -312,7 +322,6 @@ html, body {
 /* program container end*/
 /* bmi calculation start */
 .bmi-calculation{
-  border: 1px solid purple;
   background-color: rgb(34, 34, 34);
   margin-top: 88px; 
 }
@@ -339,7 +348,6 @@ html, body {
   margin: 50px 0px;
 }
 .table-design{
-  border: 1px solid blue;
   margin-bottom: 133px;
 }
 .table-design th, td{
@@ -358,14 +366,12 @@ table{
   font-weight: 500;
   color: darkgrey;
 }
-.calculation-bmi-content{
-  border: 1px solid red;
-  /* margin-left: 175px; */
-}
 .calculation-bmi-content p{
   font-size: 0.9rem;
   font-weight: 300;
   margin-bottom: 34px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
 }
 .calculation-bg h1{
   font-size: 1.9rem;
@@ -376,7 +382,6 @@ table{
 .form-container{
   display: grid;
   grid-template-columns: repeat(2 ,2fr) ;
-  /* grid-template-columns: 2fr 2fr; */
   grid-gap: 15px;  
 }
 input, select {
@@ -386,7 +391,6 @@ input, select {
   border-radius: 5px;
   background-color: #444;
   color: #fff;
-  /* padding-right: ; */ 
 }
 select, option{
   width: 97%;
@@ -410,7 +414,6 @@ select, option{
 /* bmi calculation end */
 /* our section start*/
 .teams-container{
-  border: 1px solid red;
   background-color: black;
   color: white;
 }
@@ -427,10 +430,12 @@ select, option{
   font-size: 1rem;
   font-weight: 300;
   margin-bottom: 20px;
+  line-height: 24px;
+  letter-spacing: 0.8px;
 }
 .gallery-content{
-  border: 1px solid green;
   width: 70%;
+  height: auto;
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 18px;
@@ -440,10 +445,16 @@ select, option{
   margin-bottom: 88px;
 }
 .gallery-items img{
-  width: 400px;
-  height: 345px;
+  /* width: 400px;
+  height: 345px; */
+  width: 95%;
+  height: 90%;
   border-radius: 16px;
-  margin: 10px 15px;
+  /* margin: 10px 15px; */
+  /* margin-top: 24px;
+  margin-left: 10px; */
+  margin-top: 5%;
+  margin-left: 2%;
 }
 .gallery-items{
   position: relative;
@@ -481,8 +492,8 @@ select, option{
 .footer-items p{
   font-size: 0.9rem;
   font-weight: 300;
-  line-height: 24px;
-  letter-spacing: 0.3px;
+  line-height: 29px;
+  letter-spacing: 0.6px;
 }
 .footer-contact h3{
   font-size: 2rem;
@@ -505,16 +516,17 @@ select, option{
 .footer-container .copy-right{
   text-align: center;
   margin-top: 35px;
- padding-bottom: 36px;
+  padding-bottom: 36px;
   font-size: 1.4rem;
-
 }
-/* footer section style start */
+
+/* footer section style End */
 /* mobile responsive */
 @media screen and (max-width:576px) {
   html, body {
     overflow-x: hidden;
   }
+  /* navigation style start */
   .navigation-content{
     display: none;
   }
@@ -531,6 +543,22 @@ select, option{
   }
   .nav-container-section{
     width: 100%;
+  }
+  /* navigation style end */
+
+  /* banner style start */
+  .banner-content-item .font-shape {
+    font-size: 7rem;
+  }
+  .ball{
+   display: none;
+  }
+  .youtube-icon{
+    display: block;
+    border-radius: px;
+    width: 50px;
+    height: 50px;
+    margin-right: px;
   }
   .banner-container{
     width: 99%;
@@ -573,14 +601,13 @@ select, option{
   }
   .provide-primary-item{
     width: 150px;
-    /* top: 114%; */
-    top: 147%;
-    left: 9%;
-    padding: 14px 15px;
+    top: 86%;
+    left: 10%;
+    padding: 14px 18px;
   }
   .provide-second-item{
     width: 160px;
-    top: 100%;
+    top: 62%;
     left: 52%;
     padding: 10px 10px;
     margin-right: 20px;
@@ -593,10 +620,10 @@ select, option{
     height: 100%;
     width: 90%;
   }
+  /* banner style End */
   /* change habit section start */
   .habits-content{
     width: 85%;
-    /* border: 0.1px solid black; */ 
   }
   .habits-content-item {
     flex-direction: column;
@@ -641,6 +668,10 @@ select, option{
   .program-items:hover{
     background-color: rgb(20, 20, 20);
   }
+  .gym-video video{
+    width: 98%;
+    height: 90%;
+  }
   /* program- container end */
 
   /* bmi calculation start */
@@ -676,10 +707,10 @@ select, option{
   /* bmi calculation end */
   /* our section start*/
   .gallery-items img{
-    width: 350px;
-    height: 355px;
+    width: 95%;
+    height: 90%;
     border-radius: 16px;
-    margin: 10px 15px;
+    margin-top: 5%;
   }
   .gallery-content{
     width: 90%; 
